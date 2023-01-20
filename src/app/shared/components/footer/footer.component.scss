@@ -1,0 +1,13 @@
+footer {
+	background-color: var(--dark-header-footer-background);
+	padding: 40px 200px;
+	display: flex;
+	justify-content: space-between;
+	font-weight: var(--text-weight-bold);
+
+
+	& .footer-left-wrapper {
+		display: flex;
+		gap: 16px;
+	}
+}

@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+:root {
+	--spacing-zero: 0px;
+	--spacing-xxs: 2px;
+	--spacing-xs: 4px;
+	--spacing-s: 8px;
+	--spacing-m: 12px;
+	--spacing-l: 16px;
+	--spacing-xl: 24px;
+	--spacing-xxl: 32px;
+	--spacing-xxxl: 48px;
+	--spacing-xxxxl: 110px;
+	--border-style-solid: solid;
+	--border-width-default: 1px;
+	--border-width-l: 2px;
+	--border-width-xl: 4px;
+	--border-radius-xs: 2px;
+	--border-radius-s: 4px;
+	--border-radius-m: 6px;
+	--border-radius-l: 8px;
+	--border-radius-xl: 15px;
+	--border-radius-xxl: 25px;
+	--border-radius-default: 4px;
+	--border-radius-max: 100%;
+	--shadow-focus: 0 0 0 1px var(--background-color-primary), 0 0 0 3px #adcdfb;
+	--shadow-dark: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+	--shadow-light: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+	--size-xs: 16px;
+	--size-s: 24px;
+	--size-m: 32px;
+	--controls-size-default: var(--size-m);
+	--controls-size-small: var(--size-s);
+	--transition-delay-default: 0.2s;
+	--transition-timing-default: ease-in-out;
+}
+
+* {
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+}
+
+body, .app-root {
+	color-scheme: dark;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	background-color: var(--background-color-secondary);
+	color: var(--content-color-primary);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.p {
+	&-absolute {
+		position: absolute;
+	}
+
+	&-relative {
+		position: relative;
+	}
+}
+
+.d {
+	&-flex {
+		display: flex;
+	}
+
+	&-block {
+		display: block;
+	}
+}
+
+.is {
+	&-hidden {
+		display: none !important;
+	}
+
+	&-active {
+	}
+}

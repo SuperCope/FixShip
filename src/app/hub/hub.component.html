@@ -1,0 +1,18 @@
+<app-header #headerComponent [inputConnected]="inputConnectedValue" (outputConnected)="displayIsConnected($event)" >
+
+</app-header>
+
+<body>
+    <table style="border: 1px solid black">
+        <tr *ngFor="let room of rooms; let index = index; let isFirst = first; let isOdd = odd;">
+            <td>{{room.players.id}}</td>
+            <td>{{room.players.length}} joueur</td>
+        </tr>
+    </table>
+    <input #username type="text">
+    <button (click)="createRoom(username.value)" class="btn btn-primary" id="start" class="btn btn-primary" type="submit">Créer un salon privée</button>
+
+</body>
+<app-footer>
+
+</app-footer>

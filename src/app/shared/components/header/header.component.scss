@@ -1,0 +1,76 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.nav-wrapper{
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+	padding: var(--spacing-l) var(--spacing-xxl);
+	background-color: var(--dark-header-footer-background);
+
+	& .header-right-content-container{
+		display: flex;
+		column-gap: var(--spacing-xl);
+		align-items: center;
+
+		& .header-right-content-market {
+			position: relative;
+			cursor: pointer;
+			padding: var(--spacing-s) var(--spacing-s);
+
+			.cart-items-number {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				background-color: var(--base-color-brand);
+				color: var(--dark-text);
+				border-radius: var(--border-radius-default);
+				padding: var(--spacing-xs) var(--spacing-xs);
+				font-size: var(--text-size-xs);
+
+				&:empty {
+					display: none;
+				}
+			}
+
+			& .header-right-content-cart-icon {
+				height: 32px;
+				width: 32px;
+				fill: currentColor;
+				color: var(--grey-00);
+			}
+
+			&:hover {
+				border-radius: var(--border-radius-default);
+				background: var(--grey-90);
+			}
+		}
+
+		.user-dropdown {
+			& .dropdown-button-wrap {
+				padding: var(--spacing-s) var(--spacing-s);
+
+				&:hover {
+					border-radius: var(--border-radius-default);
+					background: var(--grey-90);
+				}
+
+				& .authenticated-user-icon {
+					width: 32px;
+					height: 32px;
+					user-select: none;
+				}
+			}
+
+			& .dropdown-content {
+				right: 0;
+				margin-right: var(--spacing-xxl);
+			}
+		}
+
+		.auth-actions {
+			display: flex;
+			column-gap: var(--spacing-xl);
+			position: relative;
+		}
+	}
+}
